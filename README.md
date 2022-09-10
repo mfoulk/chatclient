@@ -56,3 +56,17 @@ You should see `Example app listening at http://localhost:5000`.
 ```
 npm run serve
 ```
+
+
+https://learnvue.co/tutorials/deploy-vue-to-github-pages#step-3-run-git-add-dist--git-commit--m-adding-dist-subtree
+
+```
+export NODE_OPTIONS=--openssl-legacy-provider
+```
+```
+git add dist && git commit -m 'adding dist subtree'
+```
+
+```
+git subtree push --prefix dist origin gh-pages
+```
