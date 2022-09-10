@@ -56,7 +56,7 @@ export default {
 			})
 		},
 		getToken: async function(identity) {
-      const response = await fetch(`http://localhost:7020/conversation/token/${identity}`, {
+      const response = await fetch(`https://apidev.loanscience.com/conversation/token/${identity}`, {
         method: 'POST'
       })
 			const responseJson = await response.json()
